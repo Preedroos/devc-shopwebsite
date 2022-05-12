@@ -1,0 +1,130 @@
+/* ==================== FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: black;
+}
+
+:root {
+  --primary-color: hsl(25, 78%, 55%);
+
+  font-size: 14px;
+}
+
+/* ==================== GENERAL ==================== */
+body {
+  background: url('./assets/background.jpg') no-repeat fixed;
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding: 0.5rem 6rem;
+}
+
+/* ==================== HEADER ==================== */
+
+#header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header #logo {
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#header #navigation {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+#header #navigation div:first-child {
+  display: flex;
+  gap: 4rem;
+}
+
+#header #navigation div:first-child a {
+  font-size: 1rem;
+}
+
+#header #navigation div:last-child {
+  display: flex;
+  gap: 8rem;
+}
+
+#header #navigation div:last-child svg {
+  width: 1.4rem;
+}
+
+/* ==================== MAIN ==================== */
+
+main {
+  margin-block: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ==================== MAIN-LEFT ==================== */
+#main-left {
+  flex-grow: 1;
+}
+
+#main-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+#main-left ul li {
+  color: gray;
+  font-size: 1rem;
+  transition: 200ms;
+  padding: 0.2rem;
+}
+
+#main-left ul li:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* ==================== MAIN-MIDDLE ==================== */
+
+#main-middle {
+  flex-grow: 3;
+}
+
+#main-middle h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#main-middle h2 {
+  font-size:1.2rem;
+  padding-block: 0.5rem;
+}
+
+
+/* ==================== MAIN-RIGHT ==================== */
+
+#main-right {
+  flex-grow: 1;
+}
